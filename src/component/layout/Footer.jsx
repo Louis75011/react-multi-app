@@ -1,11 +1,12 @@
 export default function Footer() {
   return (
     <footer>
-      <div>
-        <hr />
+      <hr />
+      <div className="informations">
         <a className="mail" href="mailto:louisrouanet75@gmail.com">
-          e-mail de contact
+          E-mail de contact
         </a>
+        <p>Février 2023</p>
       </div>
     </footer>
   )
