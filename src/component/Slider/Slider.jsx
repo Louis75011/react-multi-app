@@ -60,7 +60,7 @@ export default function Slider() {
         )
       })}
       <BtnSlider moveSlide={nextSlide} direction={'next'} />
-      <BtnSlider moveSlide={prevSlide} direction={'prev'} />
+      <BtnSlider moveSlide={prevSlide} direction={'previous'} />
 
       {/* Points de sélection d'image */}
       <div className="container-dots">

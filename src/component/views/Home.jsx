@@ -25,8 +25,8 @@ export default function Home() {
       link: '/multiform',
     },
     {
-      imagePath: '/images/formstepvalid.png',
-      title: 'Projet 1',
+      imagePath: '/images/slider1.jpg',
+      title: 'Projet test',
       description:
         "Utilité : Gestion de l'étape de validation d'un formulaire. Remplissage de test écrit. Remplissage de test écrit.",
       link: '/project1',
@@ -50,7 +50,7 @@ export default function Home() {
                   <h3>{element.title}</h3>
                   <p className="description">{element.description}</p>
                   <Link to={element.link}>
-                    <button className='standard-button'>Utiliser {element.title}</button>
+                    <button className="standard-button">Utiliser: {element.title}</button>
                   </Link>
                 </div>
               </div>

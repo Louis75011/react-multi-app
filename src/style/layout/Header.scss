@@ -1,4 +1,5 @@
 .navigation {
+  z-index: 7;
   height: 60px;
   width: 100%;
   display: flex;
@@ -8,7 +9,6 @@
   background-color: #fff;
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-  z-index: 50;
 
   h1 {
     color: #ad141e;
@@ -19,10 +19,10 @@
 .hamburger {
   border: 0;
   height: 40px;
-  width: 40px;
   padding: 0.5rem;
   border-radius: 20%;
   background-color: #ad141e;
+  color: white;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -61,7 +61,7 @@
   text-decoration: none;
   color: #2642af;
   font-weight: 800;
-  padding: 0 1rem;
+  margin: 0 1rem;
   display: block;
   width: 100%;
 }
