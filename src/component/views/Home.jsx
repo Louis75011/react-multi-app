@@ -4,22 +4,29 @@ import '../../style/views/Home.scss'
 export default function Home() {
   const projectCard = [
     {
-      imagePath: '/images/slider1.jpg',
+      imagePath: '/images/slider.png',
       title: 'Slider',
       description:
         'Utilité : afficher des images en mouvement. Remplissage de test écrit. Remplissage de test écrit.',
       link: '/slider',
     },
     {
-      imagePath: '/images/slider2.jpg',
+      imagePath: '/images/multilanguages.png',
       title: 'Multi-Langues',
       description:
         "Utilité : Gestion de traduction automatique d'une langue à une autre. Remplissage de test écrit. Remplissage de test écrit.",
-      link: '/project1',
+      link: '/multilanguage',
     },
     {
-      imagePath: '/images/slider3.jpg',
-      title: 'Multi-step-validation',
+      imagePath: '/images/formstepvalid.png',
+      title: 'Validation par étapes',
+      description:
+        "Utilité : Gestion de l'étape de validation d'un formulaire. Remplissage de test écrit. Remplissage de test écrit.",
+      link: '/multiform',
+    },
+    {
+      imagePath: '/images/formstepvalid.png',
+      title: 'Projet 1',
       description:
         "Utilité : Gestion de l'étape de validation d'un formulaire. Remplissage de test écrit. Remplissage de test écrit.",
       link: '/project1',
@@ -43,7 +50,7 @@ export default function Home() {
                   <h3>{element.title}</h3>
                   <p className="description">{element.description}</p>
                   <Link to={element.link}>
-                    <button>Visiter {element.title}</button>
+                    <button className='standard-button'>Utiliser {element.title}</button>
                   </Link>
                 </div>
               </div>

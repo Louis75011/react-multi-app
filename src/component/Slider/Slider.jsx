@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './Slider.scss'
 import dataSlider from './dataSlider'
 import BtnSlider from './BtnSlider'
+import './Slider.scss'
 
 export default function Slider() {
   const [slideAnim, setSlideAnim] = useState({
@@ -55,7 +55,7 @@ export default function Slider() {
             key={obj.id}
             className={slideAnim.index === index + 1 ? 'slide active-anim' : 'slide'}
           >
-            <img src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} alt="" />
+            <img src={process.env.PUBLIC_URL + `/images-slider/img${index + 1}.jpg`} alt="" />
           </div>
         )
       })}
