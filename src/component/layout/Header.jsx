@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <nav className="navigation">
         <a href="/" className="brand-name">
-          <h1>Multi-App</h1>
+          <h1>Multi-Apps</h1>
         </a>
 
         <button

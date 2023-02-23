@@ -8,8 +8,7 @@ export default function Home() {
       title: 'Slider',
       description:
         'Utilité : afficher des images en mouvement. Remplissage de test écrit. Remplissage de test écrit.',
-      link: '/project1',
-      titleLink: 'Visiter Projet 1',
+      link: '/slider',
     },
     {
       imagePath: '/images/slider2.jpg',
@@ -17,7 +16,6 @@ export default function Home() {
       description:
         "Utilité : Gestion de traduction automatique d'une langue à une autre. Remplissage de test écrit. Remplissage de test écrit.",
       link: '/project1',
-      titleLink: 'Visiter Projet 2',
     },
     {
       imagePath: '/images/slider3.jpg',
@@ -25,7 +23,6 @@ export default function Home() {
       description:
         "Utilité : Gestion de l'étape de validation d'un formulaire. Remplissage de test écrit. Remplissage de test écrit.",
       link: '/project1',
-      titleLink: 'Visiter Projet 3',
     },
   ]
 
@@ -46,7 +43,7 @@ export default function Home() {
                   <h3>{element.title}</h3>
                   <p className="description">{element.description}</p>
                   <Link to={element.link}>
-                    <button>{element.titleLink}</button>
+                    <button>Visiter {element.title}</button>
                   </Link>
                 </div>
               </div>
