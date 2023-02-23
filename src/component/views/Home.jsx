@@ -30,20 +30,21 @@ export default function Home() {
     <main>
       <div className="text-end">
         <h2>Nos applications</h2>
+      <img src="/images/slider3.jpg" height="300px" alt="" />
         <p>
           La description de nos applications nous sert à redéfinir les besoins clients et autres
           utilitées pour le code ou encore dans la vie quotidienne.
         </p>
       </div>
 
-      <div className="flex">
 
+      <div className="flex">
+<div className="cards">
         {projectCard.map((element, index) => {
           return (
-<div className="cards" key={index}>
-          <div className="card">
+          <div className="card" key={index}>
             <img
-              src={element.image}
+              src={process.env.PUBLIC_URL + element.imagePath}
               width="100%"
               height="200px"
               alt="slider, project, show, test"
@@ -58,13 +59,10 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
           )
-
-        }) }
-
+        })}
+        </div>
       </div>
-      <div className="container"></div>
     </main>
   )
 }
