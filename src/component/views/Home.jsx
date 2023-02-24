@@ -6,30 +6,32 @@ export default function Home() {
     {
       imagePath: '/images/slider.png',
       title: 'Slider',
-      description:
-        'Utilité : afficher des images en mouvement. Remplissage de test écrit. Remplissage de test écrit.',
+      description: 'Afficher des images en mouvement.',
       link: '/slider',
     },
     {
       imagePath: '/images/multilanguages.png',
       title: 'Multi-Langues',
-      description:
-        "Utilité : Gestion de traduction automatique d'une langue à une autre. Remplissage de test écrit. Remplissage de test écrit.",
+      description: "Gestion de traduction automatique d'une langue à une autre.",
       link: '/multilanguage',
     },
     {
       imagePath: '/images/formstepvalid.png',
       title: 'Validation par étapes',
-      description:
-        "Utilité : Gestion de l'étape de validation d'un formulaire. Remplissage de test écrit. Remplissage de test écrit.",
+      description: "Gestion de l'étape de validation d'un formulaire.",
       link: '/multiform',
     },
     {
-      imagePath: '/images/slider1.jpg',
-      title: 'Projet test',
-      description:
-        "Utilité : Gestion de l'étape de validation d'un formulaire. Remplissage de test écrit. Remplissage de test écrit.",
-      link: '/project1',
+      imagePath: '/images/chrono.png',
+      title: 'Chronomètre',
+      description: 'Chronomètre avec gestion du temps et des pauses.',
+      link: '/chrono',
+    },
+    {
+      imagePath: '/images/images-bank.png',
+      title: "Gallerie d'images",
+      description: "Visionner une banque d'images infinie avec fonctionnalité de recherche.",
+      link: '/infinite-gallery',
     },
   ]
 
@@ -40,19 +42,19 @@ export default function Home() {
           {projectCard.map((element, index) => {
             return (
               <div className="card" key={index}>
-                <img
-                  src={process.env.PUBLIC_URL + element.imagePath}
-                  width="100%"
-                  height="200px"
-                  alt="slider, project, show, test"
-                />
-                <div className="container">
-                  <h3>{element.title}</h3>
-                  <p className="description">{element.description}</p>
-                  <Link to={element.link}>
-                    <button className="standard-button">Utiliser: {element.title}</button>
-                  </Link>
-                </div>
+                <Link to={element.link}>
+                  <img
+                    src={process.env.PUBLIC_URL + element.imagePath}
+                    width="100%"
+                    height="200px"
+                    alt="slider, project, show, test"
+                  />
+                  <div className="container">
+                    <h3>{element.title}</h3>
+                    <p className="description">{element.description}</p>
+                    <button className="standard-button">Utiliser</button>
+                  </div>
+                </Link>
               </div>
             )
           })}

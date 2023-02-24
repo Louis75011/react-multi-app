@@ -12,11 +12,11 @@ export default function ToggleLangs() {
 
   return (
     <div className="container-langs">
-      <img onClick={() => toggleLang('EN')} src={EnglishFlag} />
-      <img onClick={() => toggleLang('DE')} src={GermanyFlag} />
-      <img onClick={() => toggleLang('FR')} src={FrenchFlag} />
-      <img onClick={() => toggleLang('ES')} src={SpanishFlag} />
-      <img onClick={() => toggleLang('IT')} src={ItalyFlag} />
+      <img onClick={() => toggleLang('EN')} src={EnglishFlag} alt="flag, country, language" />
+      <img onClick={() => toggleLang('DE')} src={GermanyFlag} alt="flag, country, language" />
+      <img onClick={() => toggleLang('FR')} src={FrenchFlag} alt="flag, country, language" />
+      <img onClick={() => toggleLang('ES')} src={SpanishFlag} alt="flag, country, language" />
+      <img onClick={() => toggleLang('IT')} src={ItalyFlag} alt="flag, country, language" />
     </div>
   )
 }

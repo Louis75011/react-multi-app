@@ -52,12 +52,20 @@
 }
 
 .previous {
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
   top: 50%;
   left: 10px;
   transform: translateY(-60%);
 }
 
 .next {
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
   top: 50%;
   right: 10px;
   transform: translateY(-60%);
