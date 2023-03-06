@@ -23,7 +23,10 @@ export default function Header() {
         <div className={isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'}>
           <ul>
             <li>
-              <a href="/about">About</a>
+              <a href="/login-form">Connexion</a>
+            </li>
+            <li>
+              <a href="/about">À propos</a>
             </li>
             <li>
               <a href="/contact">Contact</a>

@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { FirebaseProvider } from './services/configFirebase'
 import LanguageProvider from './component/Multilanguages/context/langContext'
 import Layout from './component/layout/Layout'
 import Home from './component/views/Home'
+import LoginForm from './component/views/LoginForm'
 import Contact from './component/views/Contact'
 import About from './component/views/About'
 import Slider from './component/Slider/Slider'
@@ -14,20 +16,23 @@ import './App.scss'
 function App() {
   return (
     <BrowserRouter>
-      <LanguageProvider>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route index path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/slider" element={<Slider />} />
-            <Route path="/multilanguage" element={<Multilanguages />} />
-            <Route path="/multiform" element={<Multiform />} />
-            <Route path="/chrono" element={<Chrono />} />
-            <Route path="/infinite-gallery" element={<InfiniteScroll />} />
-          </Route>
-        </Routes>
-      </LanguageProvider>
+      <FirebaseProvider>
+        <LanguageProvider>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route index path="/" element={<Home />} />
+              <Route path="/login-form" element={<LoginForm />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/slider" element={<Slider />} />
+              <Route path="/multilanguage" element={<Multilanguages />} />
+              <Route path="/multiform" element={<Multiform />} />
+              <Route path="/chrono" element={<Chrono />} />
+              <Route path="/infinite-gallery" element={<InfiniteScroll />} />
+            </Route>
+          </Routes>
+        </LanguageProvider>
+      </FirebaseProvider>
     </BrowserRouter>
   )
 }

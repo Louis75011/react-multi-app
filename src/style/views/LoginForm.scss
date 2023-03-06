@@ -1,0 +1,68 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ad141e;
+}
+
+form {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 300px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  label {
+    color: $primary-color;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  input {
+    width: 83%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    &:focus {
+      outline: none;
+      border-color: #0057ff;
+    }
+  }
+
+  button {
+    width: 90%;
+    padding: 10px;
+    background-color: #0057ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .paragraphe {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
