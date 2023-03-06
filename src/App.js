@@ -11,6 +11,7 @@ import Multilanguages from './component/Multilanguages/Multilanguages'
 import Multiform from './component/MultiForm/Multiform.jsx'
 import Chrono from './component/Chrono/Chrono'
 import InfiniteScroll from './component/InfiniteScroll/infiniteScroll'
+import TodoList from './component/TodoList/TodoList'
 import './App.scss'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <Route path="/multiform" element={<Multiform />} />
               <Route path="/chrono" element={<Chrono />} />
               <Route path="/infinite-gallery" element={<InfiniteScroll />} />
+              <Route path="/todolist" element={<TodoList />} />
             </Route>
           </Routes>
         </LanguageProvider>

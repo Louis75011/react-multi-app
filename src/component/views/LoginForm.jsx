@@ -8,17 +8,17 @@ import 'firebase/compat/firestore'
 import '../../style/views/LoginForm.scss'
 
 function LoginForm() {
-  const emailRef = useRef()
-  const passwordRef = useRef()
-  const { auth } = useContext(FirebaseContext)
   const [loggedIn, setLoggedIn] = useState(false)
-  const navigate = useNavigate()
   const [wrongPassword, setWrongPassword] = useState(false)
   const [accountAlreadyExist, setAccountAlreadyExist] = useState(false)
+  const { auth } = useContext(FirebaseContext)
+  const emailRef = useRef()
+  const passwordRef = useRef()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      setLoggedIn(!!user)
+      setLoggedIn(!!user) // null retourne false, not null retourne vrai
     })
     return unsubscribe
   }, [auth])

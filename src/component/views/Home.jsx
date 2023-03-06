@@ -35,6 +35,19 @@ export default function Home() {
       description: "Visionner une banque d'images infinie avec fonctionnalité de recherche.",
       link: '/infinite-gallery',
     },
+    {
+      imagePath: '/images/todolist.png',
+      title: 'Liste des tâches',
+      description:
+        'Utile pour un utilisateur de pouvoir ajouter des notes, les modifier et les supprimer',
+      link: '/todolist',
+    },
+    // {
+    //   imagePath: '/images/images-bank.png',
+    //   title: "Site e-commerce",
+    //   description: "Ajouter et modifier des éléments au panier",
+    //   link: '/cart',
+    // },
   ]
 
   return (

@@ -28,7 +28,7 @@ export default function Popup() {
     <>
       {showPopup && (
         <div className="popup-overlay">
-          <p>Veuillez sélectionner une sous application !</p>
+          <p>Veuillez sélectionner un sous module pour l'essayer !</p>
         </div>
       )}
     </>
