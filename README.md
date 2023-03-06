@@ -11,7 +11,7 @@ The description of our applications helps us to redefine customer needs and othe
 - Form data
 - Gallery of pictures
 
-* Navigation and authentification
+* Navigation, Authentification & PopUp
 
 Production example : https://react-multi-app-beta.vercel.app/
 

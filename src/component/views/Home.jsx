@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import Popup from '../layout/Popup'
 import '../../style/views/Home.scss'
 
 export default function Home() {
@@ -37,6 +39,7 @@ export default function Home() {
 
   return (
     <main>
+      <Popup />
       <div className="flex">
         <div className="cards">
           {projectCard.map((element, index) => {

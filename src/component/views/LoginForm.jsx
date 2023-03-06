@@ -1,12 +1,11 @@
-import { useRef, useState, useEffect } from 'react'
-import '../../style/views/LoginForm.scss'
+import { useRef, useState, useEffect, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { FirebaseContext } from '../../services/configFirebase'
+import { FaGoogle } from 'react-icons/fa'
 import firebase from '../../services/configFirebase'
 import 'firebase/compat/auth'
 import 'firebase/compat/firestore'
-import { useContext } from 'react'
-import { FirebaseContext } from '../../services/configFirebase'
-import { useNavigate } from 'react-router-dom'
-import { FaGoogle } from 'react-icons/fa'
+import '../../style/views/LoginForm.scss'
 
 function LoginForm() {
   const emailRef = useRef()
