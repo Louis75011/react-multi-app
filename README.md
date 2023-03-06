@@ -1,6 +1,6 @@
 # React Multi App
 
-## Firebase, SCSS, Router, Icons...
+## Firebase, SCSS, Router-dom...
 
 The description of our applications helps us to redefine customer needs and other usefulness for the code or even in daily life.
 
@@ -10,6 +10,7 @@ The description of our applications helps us to redefine customer needs and othe
 - Pomodoro
 - Form data
 - Gallery of pictures
+- To-do-list
 
 * Navigation, Authentification & PopUp
 
